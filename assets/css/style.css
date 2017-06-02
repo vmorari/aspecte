@@ -1,5 +1,5 @@
 #head {
-  background-color: black;
+  background-color: #1b1b1b;
 
 }
 body {
@@ -61,7 +61,7 @@ body {
 .serv1{width: 970px;margin: 0px auto;padding-bottom: 50px;}
 
 #portofolio{
-  background-color: black;
+  background-color: #1b1b1b;
 /*  background-repeat: repeat-x;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#33393f), to(#2b2e33));
   background: -webkit-linear-gradient(45deg, #2b2e33, #33393f);
@@ -287,7 +287,7 @@ textarea:focus{
 }
 
 #contact{
-  background-color: black;
+  background-color: #1b1b1b;
 }
 
 .w3-animate-fading{animation:fading 2s }@keyframes fading{0%{opacity:0}50%{opacity:1}20%{opacity:0}}
