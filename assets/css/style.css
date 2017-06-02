@@ -6,6 +6,9 @@ body {
   background-color: white !important;
   overflow-x: hidden;
 }
+html{
+  overflow-x: hidden;
+}
 .logo{
   text-align: center;
   margin: 200px auto;
