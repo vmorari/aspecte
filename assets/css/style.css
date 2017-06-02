@@ -154,7 +154,7 @@ div.boxed:hover {
 .righted{
   text-align: right;
   margin-bottom: 30px;
-  padding-top: 140px;
+  padding-top: 110px;
 }
 .texted{
   color: #ccbba3;
@@ -282,10 +282,9 @@ textarea:focus{
 .white{
   background-color: white !important;
   height: 500px;
-  padding: 100px 120px;
+  padding: 100px 115px;
   padding-bottom: 200px;
   margin-left: -125px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #contact{
@@ -306,7 +305,7 @@ textarea:focus{
 #narrow {
   float: left;
   width:200px;
-  margin-left: 250px;
+  margin-left: 260px;
   text-align: left;
 }
 
@@ -383,5 +382,5 @@ textarea:focus{
   width: 45% !important;
 }
 .span10{
-  margin-left: 100px !important;
+  margin-left: 4% !important;
 }
