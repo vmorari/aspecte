@@ -18,7 +18,7 @@ body {
   line-height: 80px;
   font-size: 25px;
   color: #ccbba3;
-  margin: 170px auto 130px;
+  margin: -100px auto 150px;
   font-family: 'Open Sans',sans-serif;
   font-style: italic;
   text-align: center;
@@ -375,6 +375,10 @@ textarea:focus{
 
 .margin-top-xs{
   margin-top: 50px;
+}
+
+.margin-bottom{
+  margin-bottom: 100px;
 }
 
 .span6{
