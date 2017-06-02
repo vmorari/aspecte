@@ -6,9 +6,6 @@ body {
   background-color: white !important;
   overflow-x: hidden;
 }
-html{
-  overflow-x: hidden;
-}
 .logo{
   text-align: center;
   margin: 200px auto;
@@ -96,6 +93,13 @@ html{
 .boxed img{
   margin-top: 100px;
 }
+
+@media (max-width: 500px){
+  .boxed{
+    margin-left: -30%;
+  }
+}
+
 .p1 {
   background: url('../img/p1.svg') center center no-repeat;
   background-size: 250px 250px;
