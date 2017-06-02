@@ -186,12 +186,12 @@ font-size: 12px;
 }
 .socials{
   color: #333a40;
-  padding-top: 30px;
+  padding-top: 75px;
   padding-left: 100px;
 }
 .socials a{margin-right: 10px;}
 ._ta {
-    padding-top:20px;
+    padding-top:40px;
     padding-left: 100px;
 }
 
@@ -276,7 +276,7 @@ textarea:focus{
 
 #contact .title h3{
   color: #ccbba3;
-  padding-left: 150px;
+  padding-left: 100px;
 }
 
 .white{
@@ -285,6 +285,7 @@ textarea:focus{
   padding: 100px 120px;
   padding-bottom: 200px;
   margin-left: -125px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #contact{
