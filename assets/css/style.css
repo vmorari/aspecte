@@ -2,9 +2,11 @@
   background-color: #1b1b1b;
 
 }
-html, body {
+html   {
   background-color: white !important;
   overflow-x: hidden;
+  max-width: 100%;
+  height: auto;
 }
 .logo{
   text-align: center;
@@ -201,6 +203,22 @@ font-size: 12px;
     padding-left: 100px;
 }
 
+@media (max-width: 768px){
+  .logo_footer{
+    padding-left: 30px;
+  }
+  .contacts{
+    padding-left: 30px;
+  }
+  .socials{
+    padding-left: 0px;
+  }
+  #contact .title h3 {
+
+    padding-left: 0px !important;
+}
+}
+
 ._ta textarea {
     background: transparent url(../img/line1.png) repeat;
     border:none;
@@ -338,9 +356,14 @@ textarea:focus{
 }
 
 
-@media (max-width: 985px){
-  .title img{
+@media (max-width: 1200px){
+  .title .pins img{
     display: none;
+  }
+
+  .righted{
+    margin-right: 0%;
+    margin-bottom: 0;
   }
   #narrow{
     height: 150px;
@@ -358,6 +381,7 @@ textarea:focus{
       margin-left: 300px;
     }
   }
+
 }
 @media (max-width:768px){
   #narrow{
@@ -368,6 +392,9 @@ textarea:focus{
   }
   .boxed{
     height: 200px;
+  }
+  .clam2{
+    display: none;
   }
 }
 
@@ -392,5 +419,12 @@ textarea:focus{
   width: 45% !important;
 }
 .span10{
-  margin-left: 4% !important;
+  margin-left: 3.5% !important;
+}
+
+@media(max-width:770px){
+  .centered input{
+    margin-right: -120%;
+    text-align: center;
+  }
 }
