@@ -1,5 +1,6 @@
 #head {
   background-color: #1b1b1b;
+  height: auto;
 
 }
 html , body  {
@@ -404,7 +405,7 @@ textarea:focus{
 }
 
 .margin-top-section{
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .margin-top-xs{
@@ -418,8 +419,8 @@ textarea:focus{
 .span6{
   width: 45% !important;
 }
-.span10{
-  margin-left: 3.5% !important;
+.span9{
+  margin-left: 12% !important;
 }
 
 @media(max-width:770px){
