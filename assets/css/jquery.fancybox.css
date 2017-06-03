@@ -39,9 +39,9 @@
 }
 
 .fancybox-opened .fancybox-skin {
-	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-	   -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	border-style: solid;
+	border-width: 5px;
+	border-color: white;
 }
 
 .fancybox-outer, .fancybox-inner {
@@ -226,15 +226,16 @@
 	margin-right: -100%;
 	padding: 2px 20px;
 	background: transparent; /* Fallback for web browsers that doesn't support RGBa */
-	background: rgba(0, 0, 0, 0.8);
-	-webkit-border-radius: 15px;
-	   -moz-border-radius: 15px;
-	        border-radius: 15px;
+	background: white;
+	-webkit-border-radius: 0px;
+	   -moz-border-radius: 0px;
+	        border-radius: 0;
 	text-shadow: 0 1px 2px #222;
-	color: #FFF;
+	color: black;
 	font-weight: bold;
 	line-height: 24px;
 	white-space: nowrap;
+	width: 66vw;
 }
 
 .fancybox-title-outside-wrap {
