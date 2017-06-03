@@ -350,7 +350,7 @@ textarea:focus{
   width: 60%;
 }
 
-@media (min-width:1325px){
+@media (min-width:1340px){
   #wide{
     margin-right: 100px;
   }
@@ -377,9 +377,9 @@ textarea:focus{
     margin: auto;
      width: 30%;
   }
-  @media (min-width:760px){
+  @media (min-width:780px){
     #narrow{
-      margin-left: 300px;
+      margin-left: 400px;
     }
   }
 
@@ -429,10 +429,24 @@ textarea:focus{
     text-align: center;
   }
 }
-.fancybox-next span {
-  left: auto;
-  right: 20px;
- }
- .fancybox-prev span {
-  left: 20px;
- }
+
+.fancybox-title-float-wrap .child {
+    display: inline-block;
+    margin-right: -100%;
+    padding: 2px 20px;
+    background: transparent;
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    text-shadow: 0 1px 2px #222;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 14pt;
+    line-height: 24px;
+    white-space: nowrap;
+    width: 66vw;
+}
+.fancybox-image{
+  border: 0px solid #fff !important;
+}

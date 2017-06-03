@@ -11,7 +11,9 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
@@ -100,13 +102,13 @@
 
           <div class="col-lg-10" id="wide">
                 <div class="mySlides w3-animate-fading">
-                  <a  href="assets/img/img1/Coolt Urban.jpg" data-fancybox data-fancybox="group" data-caption="Coolt Urban"><div class="span3 boxed centered p1  " rel="group1" href="assets/img/img1/Coolt Urban.jpg">
+                  <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/Coolt Urban.jpg" title="coolt urban"><div class="span3 boxed centered p1  " rel="group1" href="assets/img/img1/Coolt Urban.jpg">
                   </div></a>
 
-                  <a  href="assets/img/img1/High Class Trading.jpg" data-fancybox data-fancybox="group" data-caption="My caption"><div class="span3 boxed centered p2 " rel="group1" href="assets/img/img1/High Class Trading.jpg">
+                  <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/High Class Trading.jpg" title="high-class-trading"><div class="span3 boxed centered p2 " rel="group1" href="assets/img/img1/High Class Trading.jpg">
                   </div></a>
 
-                  <a href="assets/img/img1/Joase.jpg" data-fancybox data-caption="My caption"><div class="span3  boxed centered p3 " rel="group1" href="assets/img/img1/Joase.jpg">
+                  <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/Joase.jpg" title="Joase"><div class="span3 boxed centered p3">
                   </div></a>
 
 
@@ -239,8 +241,8 @@
     <script src="assets/js/holder/holder.js"></script>
     <script src="assets/js/google-code-prettify/prettify.js"></script>
 
-    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox-thumbs.js"></script>
 
 
     <!--content fade-in -->
@@ -316,171 +318,44 @@ $('.result').html('');
       });
     </script>
 
-    <script type="text/javascript">
-    	$("[data-fancybox]").fancybox({
-    		// Options will go here
-        prevEffect	: 'none',
-        nextEffect	: 'none',
-        showNavArrows  : true,
-        image : {
-      		protect: true
-      	}
-        defaults = {
-
-        	// Animation duration in ms
-        	speed : 330,
-
-        	// Enable infinite gallery navigation
-        	loop : true,
-
-        	// Should zoom animation change opacity, too
-        	// If opacity is 'auto', then fade-out if image and thumbnail have different aspect ratios
-        	opacity : 'auto',
-
-        	// Space around image, ignored if zoomed-in or viewport smaller than 800px
-        	margin : [44, 0],
-
-        	// Horizontal space between slides
-        	gutter : 30,
-
-        	// Should display toolbars
-        	infobar : true,
-        	buttons : true,
-
-        	// What buttons should appear in the toolbar
-        	slideShow  : true,
-        	fullScreen : true,
-        	thumbs     : true,
-        	closeBtn   : true,
-
-        	// Should apply small close button at top right corner of the content
-        	// If 'auto' - will be set for content having type 'html', 'inline' or 'ajax'
-        	smallBtn : 'auto',
-
-        	image : {
-
-        		// Wait for images to load before displaying
-        		// Requires predefined image dimensions
-        		// If 'auto' - will zoom in thumbnail if 'width' and 'height' attributes are found
-        		preload : "auto",
-
-        		// Protect an image from downloading by right-click
-        		protect : false
-
-        	},
-
-        	ajax : {
-
-        		// Object containing settings for ajax request
-        		settings : {
-
-        			// This helps to indicate that request comes from the modal
-        			// Feel free to change naming
-        			data : {
-        				fancybox : true
-        			}
-        		}
-
-        	},
-
-        	iframe : {
-
-        		// Iframe template
-        		tpl : '<iframe id="fancybox-frame{rnd}" name="fancybox-frame{rnd}" class="fancybox-iframe" frameborder="0" vspace="0" hspace="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen allowtransparency="true" src=""></iframe>',
-
-        		// Preload iframe before displaying it
-        		// This allows to calculate iframe content width and height
-        		// (note: Due to "Same Origin Policy", you can't get cross domain data).
-        		preload : true,
-
-        		// Scrolling attribute for iframe tag
-        		scrolling : 'no',
-
-        		// Custom CSS styling for iframe wrapping element
-        		css : {}
-
-        	},
-
-        	// Custom CSS class for layout
-        	baseClass : '',
-
-        	// Custom CSS class for slide element
-        	slideClass : '',
-
-        	// Base template for layout
-        	baseTpl	: '<div class="fancybox-container" role="dialog" tabindex="-1">' +
-        			'<div class="fancybox-bg"></div>' +
-        			'<div class="fancybox-controls">' +
-        				'<div class="fancybox-infobar">' +
-        					'<button data-fancybox-previous class="fancybox-button fancybox-button--left" title="Previous"></button>' +
-        					'<div class="fancybox-infobar__body">' +
-        						'<span class="js-fancybox-index"></span>&nbsp;/&nbsp;<span class="js-fancybox-count"></span>' +
-        					'</div>' +
-        					'<button data-fancybox-next class="fancybox-button fancybox-button--right" title="Next"></button>' +
-        				'</div>' +
-        				'<div class="fancybox-buttons">' +
-        					'<button data-fancybox-close class="fancybox-button fancybox-button--close" title="Close (Esc)"></button>' +
-        				'</div>' +
-        			'</div>' +
-        			'<div class="fancybox-slider-wrap">' +
-        				'<div class="fancybox-slider"></div>' +
-        			'</div>' +
-        			'<div class="fancybox-caption-wrap"><div class="fancybox-caption"></div></div>' +
-        		'</div>',
-
-        	// Loading indicator template
-        	spinnerTpl : '<div class="fancybox-loading"></div>',
-
-        	// Error message template
-        	errorTpl : '<div class="fancybox-error"><p>The requested content cannot be loaded. <br /> Please try again later.<p></div>',
-
-        	// This will be appended to html content, if "smallBtn" option is not set to false
-        	closeTpl : '<button data-fancybox-close class="fancybox-close-small"></button>',
-
-        	// Container is injected into this element
-        	parentEl : 'body',
-
-        	// Enable gestures (tap, zoom, pan and pinch)
-        	touch : true,
-
-        	// Enable keyboard navigation
-        	keyboard : true,
-
-        	// Try to focus on first focusable element after opening
-        	focus : true,
-
-        	// Close when clicked outside of the content
-        	closeClickOutside : true,
-
-        	// Callbacks; See Documentation/API/Events for description and samples
-        	beforeLoad	 : $.noop,
-        	afterLoad    : $.noop,
-        	beforeMove 	 : $.noop,
-        	afterMove    : $.noop,
-        	onComplete	 : $.noop,
-
-        	onInit       : $.noop,
-        	beforeClose	 : $.noop,
-        	afterClose	 : $.noop,
-        	onActivate   : $.noop,
-        	onDeactivate : $.noop
-        },
-        slideShow : {
-        	speed : 3000 // Slideshow speed in ms
-        },
-        touch : {
-        	vertical : true // Allow vertical swipe
-        },
-        thumbs : {
-        	showOnStart   : true, // Display thumbnails on opening
-        	hideOnClosing : true   // Hide thumbnail grid when closing animation starts
-        },
-        fullScreen : {
-        	requestOnStart : false // Request fullscreen mode on opening
-        }
-    	});
+    <script>
+    $(function(){
+	    $('.fancybox-thumb').fancybox({
+        autoSize : true,
+         autoWidth: true,
+         autoHeight: true,
+         fitToView: true,
+        'titlePosition'  : 'outside',
+		    padding : 0,
+		    arrows: false,
+		    helpers : {
+                thumbs : {
+				    width  : 150,
+				    height : 50
+			    },
+		    },
+		    onUpdate:function(){
+			    $('#fancybox-thumbs ul').draggable({
+				    axis: "x"
+			    });
+			    var posXY = '';
+			    $('.fancybox-skin').draggable({
+				    axis: "x",
+				    drag: function(event,ui){
+					    // get position
+                        posXY = ui.position.left;
+                        // if drag distance bigger than +- 100px: cancel drag function..
+                        if(posXY > 100){return false;}
+					    if(posXY < -100){return false;}
+				    },
+				    stop: function(){
+                        // ... and get next oder previous image
+					    if(posXY > 95){$.fancybox.prev();}
+					    if(posXY < -95){$.fancybox.next();}
+				    }
+			    });
+		    }
+		    });
+})
     </script>
-
-
-
 </html>
