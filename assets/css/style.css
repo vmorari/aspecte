@@ -224,7 +224,7 @@ font-size: 12px;
     background: transparent url(../img/line1.png) repeat;
     border:none;
     height:200px;
-    width:68%;
+    width:73%;
     overflow:hidden;
     line-height:30px;
     color:#333940;box-shadow: none;
@@ -369,6 +369,7 @@ textarea:focus{
   #narrow{
     height: 150px;
    width: 100%;
+   margin:auto;
   }
   #wide{
     width: 100%;
@@ -379,14 +380,14 @@ textarea:focus{
   }
   @media (min-width:780px){
     #narrow{
-      margin-left: 400px;
+      margin-left: 40vw;
     }
   }
 
 }
 @media (max-width:768px){
   #narrow{
-    margin:auto;
+    text-align: center;
   }
   .span3{
     width: 200px !important;
@@ -441,7 +442,7 @@ ul {
 
 @media (max-width: 768px){
   ul {
-    margin-left: 35%;
+    margin:auto;
   }
 }
 
