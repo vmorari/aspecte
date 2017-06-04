@@ -338,22 +338,18 @@ $('.result').html('');
         'titlePosition'  : 'inside',
 		    padding : 0,
 		    arrows: false,
-        beforeShow: function(){
-            $("body").css({'overflow-y':'hidden'});
-        },
-        afterClose: function(){
-            $("body").css({'overflow-y':'visible'});
-        },
+        scrolling   : 'hidden',
 		    helpers : {
                 thumbs : {
 				    width  : 150,
 				    height : 50
 			    },
           overlay: {
-            opacity: 0.4, // this make the color transparent. set to 1 for solid color
+            opacity: 0.1, // this make the color transparent. set to 1 for solid color
             css: {
                 'background': '#fff'
-            }
+            },
+            locked: true
           }
 		    },
 		    onUpdate:function(){
