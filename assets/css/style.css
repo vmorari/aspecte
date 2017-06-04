@@ -350,7 +350,7 @@ textarea:focus{
   width: 60%;
 }
 
-@media (min-width:1340px){
+@media (min-width:1500px){
   #wide{
     margin-right: 100px;
   }
@@ -437,6 +437,12 @@ ul {
     padding: 0;
     width: 165px;
     background-color: #f1f1f1;
+}
+
+@media (max-width: 768px){
+  ul {
+    margin-left: 35%;
+  }
 }
 
 li a {

@@ -329,14 +329,13 @@ $('.result').html('');
     <script>
     $(function(){
 	    $('.fancybox-thumb').fancybox({
-        'overlayColor':'#fff',
         nextEffect : 'none',
         prevEffect : 'none',
         autoSize : true,
          autoWidth: true,
          autoHeight: true,
          fitToView: true,
-        'titlePosition'  : 'outside',
+        'titlePosition'  : 'inside',
 		    padding : 0,
 		    arrows: false,
 		    helpers : {
@@ -344,6 +343,12 @@ $('.result').html('');
 				    width  : 150,
 				    height : 50
 			    },
+          overlay: {
+            opacity: 0.4, // this make the color transparent. set to 1 for solid color
+            css: {
+                'background': '#fff'
+            }
+          }
 		    },
 		    onUpdate:function(){
 			    $('#fancybox-thumbs ul').draggable({
