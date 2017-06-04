@@ -92,6 +92,7 @@ html , body  {
   height: 250px;
   margin-bottom: 0px;
   margin-left: 0px;
+  transition: all 0.3s ease 0s;
 }
 .boxed img{
   margin-top: 100px;
@@ -99,7 +100,7 @@ html , body  {
 
 @media (max-width: 500px){
   .boxed{
-    margin-left: -40%;
+    margin:auto;
   }
 }
 
@@ -345,7 +346,7 @@ textarea:focus{
 
 #wide {
   float: right;
-
+  text-align: center;
   margin-top: 85px;
   width: 60%;
 }
@@ -397,6 +398,9 @@ textarea:focus{
   }
   .clam2{
     display: none;
+  }
+  .righted{
+    text-align: center;
   }
 }
 
