@@ -4,6 +4,7 @@
 	width: 100%;
 	overflow: hidden;
 	z-index: 8050;
+
 }
 
 #fancybox-thumbs.bottom {
@@ -24,11 +25,11 @@
 #fancybox-thumbs ul li {
 	float: left;
 	padding: 1px;
-	opacity: 0.5;
+	opacity: 1 !important;
 }
 
 #fancybox-thumbs ul li.active {
-	opacity: 0.75;
+	opacity: 1 !important;
 	padding: 0;
 	border: 1px solid #fff;
 }
@@ -52,4 +53,5 @@
 	border: 0;
 	padding: 0;
 	max-width: none;
+
 }
