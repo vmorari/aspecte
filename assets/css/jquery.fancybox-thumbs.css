@@ -1,6 +1,6 @@
 #fancybox-thumbs {
 	position: fixed;
-	left: 0;
+	left: -415px;
 	width: 100%;
 	overflow: hidden;
 	z-index: 8050;

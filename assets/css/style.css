@@ -469,5 +469,5 @@ li a:hover {
 
 element {
     width: 150px;
-    height: 150px;
+    height: 150px !important;
 }
