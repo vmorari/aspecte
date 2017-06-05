@@ -377,7 +377,7 @@ textarea:focus{
   }
   .mySlides{
     margin: auto;
-     width: 30%;
+     width: 90%;
   }
   @media (min-width:780px){
     #narrow{
@@ -403,7 +403,11 @@ textarea:focus{
     text-align: center;
   }
 }
-
+@media (max-width:644px){
+  .mySlides{
+    margin-left: 25%;
+  }
+}
 
 .margin-top{
   margin-top: 41vh;
