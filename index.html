@@ -29,7 +29,7 @@
           <img src="assets/img/logo.svg"/>
         </div>
               <div class="col-md-12 centered">
-                <p class="slogan w3-animate-fading">Design creates culture. Culture shapes values. Values determine the future.</p>
+                <p class="slogan w3-animate-fading">Design creates culture. Culture shapes values. Values determine the future.<br/>Let us help.</p>
               </div>
 
         <a href="#servicii1" ><img class="margin-bottom" src="assets/img/arr.png"/></a>
@@ -101,43 +101,84 @@
             </div>
           </div>
 
-          <div class="col-lg-10" id="wide">
+          <div  id="wide">
                 <div class="mySlides w3-animate-fading">
-                  <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/Coolt Urban.jpg" title="coolt urban"><div class="span3 boxed centered p1  " rel="group1" href="assets/img/img1/Coolt Urban.jpg">
-                  </div></a>
+                  <div class="row">
+  <div class="column boxed">
+    <img src="assets/img/p1.svg" style="width:100%" onclick="openModal();currentSlide(1)" >
+  </div>
+  <div class="column boxed">
+    <img src="assets/img/p2.svg" style="width:100%" onclick="openModal();currentSlide(2)" >
+  </div>
+  <div class="column boxed">
+    <img src="assets/img/p3.svg" style="width:100%" onclick="openModal();currentSlide(3)" >
+  </div>
+  <div class="column boxed">
+    <img src="assets/img/p4.svg" style="width:100%" onclick="openModal();currentSlide(4)" >
+  </div>
+</div>
 
-                  <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/High Class Trading.jpg" title="high-class-trading"><div class="span3 boxed centered p2 " rel="group1" href="assets/img/img1/High Class Trading.jpg">
-                  </div></a>
+<div id="myModal" class="modal">
 
-                  <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/Joase.jpg" title="Joase"><div class="span3 boxed centered p3">
-                  </div></a>
+  <div class="modal-content">
 
-                  <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/ride2work.jpg" title="ride2work"><div class="span3 boxed centered p4">
-                  </div></a>
+    <div class="caption-container">
+      <div class="caption-container left">
+        <h1>My caption</h1>
+        <p id="caption"></p>
 
-                  <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/Vatra.jpg" title="Vatra"><div class="span3 boxed centered p5">
-                  </div></a>
+      </div>
 
-                  <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/Tai Tai.jpg" title="Tai Tai"><div class="span3 boxed centered p6">
-                  </div></a>
+      <div class="caption-container right margin-top-xxs">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        &nbsp;&nbsp;
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        &nbsp;&nbsp;
+        <a class="close cursor" onclick="closeModal()">&times;</a>
+      </div>
+    </div>
 
-                  <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/Daydreaming.jpg" title="Daydreaming"><div class="span3 boxed centered p7">
-                  </div></a>
+    <div class="mySlidesInner">
+      <div class="numbertext">1 / 4</div>
+      <img src="assets/img/img1/Coolt Urban.jpg" style="width:100%">
+    </div>
 
-                  <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/ROHA.jpg" title="ROHA"><div class="span3 boxed centered p8">
-                  </div></a>
+    <div class="mySlidesInner">
+      <div class="numbertext">2 / 4</div>
+      <img src="assets/img/img1/High Class Trading.jpg" style="width:100%">
+    </div>
 
-                  <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/Trinity.jpg" title="Trinity"><div class="span3 boxed centered p9">
-                  </div></a>
+    <div class="mySlidesInner">
+      <div class="numbertext">3 / 4</div>
+      <img src="assets/img/img1/Joase.jpg" style="width:100%">
+    </div>
 
-                  <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/Allez Allez.jpg" title="Allez Allezz"><div class="span3 boxed centered p10">
-                  </div></a>
+    <div class="mySlidesInner">
+      <div class="numbertext">4 / 4</div>
+      <img src="assets/img/img1/ride2work.jpg" style="width:100%">
+    </div>
 
-                  <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/hipponet.jpg" title="hipponet"><div class="span3 boxed centered p11">
-                  </div></a>
 
-                  <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/soundshare.jpg" title="soundshare"><div class="span3 boxed centered p4">
-                  </div></a>
+    <div class="caption-container">
+      &nbsp;
+    </div>
+
+
+
+    <div class="column">
+      <img class="demo cursor" src="assets/img/img1/Coolt Urban.jpg" style="width:100%" onclick="currentSlide(1)" alt="Some random text bla bla">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/img/img1/High Class Trading.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/img/img1/Joase.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/img/img1/ride2work.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
 
                 </div>
 
@@ -375,4 +416,44 @@ $('.result').html('');
 		    });
 })
     </script>
+
+    <script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlidesInner");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
 </html>
