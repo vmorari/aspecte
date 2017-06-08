@@ -1,6 +1,6 @@
 #head {
   background-color: white;
-  height: 100vh;
+  height: auto;
 
 }
 html  {
@@ -8,6 +8,27 @@ html  {
   overflow-x: hidden;
   max-width: 100%;
   height: auto;
+}
+
+.disable-scroll {
+    /* disable scrollbar on both x and y axis */
+    overflow: hidden;
+
+    /* disable scrollbar on x-axis only */
+    overflow-x: hidden;
+
+    /* disable scrollbar on y-axis only */
+    overflow-y: hidden;
+
+    /* disable scroll */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    /* OPTIONAL: none of dom element will be click-able */
+    pointer-events: none;
 }
 
 .centered {
@@ -30,12 +51,13 @@ html  {
   padding-top: 0;
 }
 .title h3{
-  font-size: 30px;
+  font-size: 32px;
   color: #806560;
   font-family: 'Roboto Condensed',sans-serif;
   font-weight: bold;
   line-height: 35px;
   margin: 50px auto;
+  letter-spacing: 0.5pt;
 }
 #servicii h4{
   font-size: 20px;
@@ -181,7 +203,7 @@ div.boxed:hover {
 
 .logo_footer{
   padding: 50px 0px 70px;
-  padding-left: 100px;
+  padding-left: 97px;
 }
 .contacts{
   color: #8f8f8f;
@@ -259,7 +281,7 @@ textarea:focus{
 .slogan1{
   margin-bottom: -185px;margin-left: -20px;
 }
-.clam1{margin-bottom:-140px;margin-left:23vw;}
+.clam1{margin-bottom:-150px;margin-left:23.5vw;}
 
 @media (max-width: 767px) {
   .container{width: auto;}
