@@ -59,6 +59,10 @@ html  {
   margin: 50px auto;
   letter-spacing: 0.5pt;
 }
+.title ul > li{
+    margin-left: -12px;
+    font-size: 20px;
+}
 #servicii h4{
   font-size: 20px;
   color: #806560;
@@ -203,7 +207,7 @@ div.boxed:hover {
 
 .logo_footer{
   padding: 50px 0px 70px;
-  padding-left: 97px;
+  padding-left: 95px;
 }
 .contacts{
   color: #8f8f8f;
