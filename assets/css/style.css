@@ -1,19 +1,15 @@
 #head {
-  background-color: #1b1b1b;
-  height: auto;
+  background-color: white;
+  height: 100vh;
 
 }
-html , body  {
+html  {
   background-color: white !important;
   overflow-x: hidden;
   max-width: 100%;
   height: auto;
 }
-.logo{
-  text-align: center;
-  margin: 200px auto;
-  width: 500px;
-}
+
 .centered {
   text-align: center;
 }
@@ -89,8 +85,7 @@ html , body  {
 .boxed{
   border: 1px solid #806560;
   padding: 0 0;
-  height: auto;
-  max-width: 250px;
+  height: 250px;
   width: 25%;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -98,9 +93,10 @@ html , body  {
 }
 
 
-@media (max-width: 500px){
+@media (max-width: 1200px){
   .boxed{
-    margin:auto;
+    width: 33.33%;
+    max-width: 33.33%;
   }
 }
 
@@ -378,6 +374,7 @@ textarea:focus{
   .mySlides{
     margin: auto;
      width: 90%;
+     margin-left: 12.5%;
   }
   @media (min-width:780px){
     #narrow{
@@ -392,9 +389,6 @@ textarea:focus{
   }
   .span3{
     width: 200px !important;
-  }
-  .boxed{
-    height: 200px;
   }
   .clam2{
     display: none;
@@ -425,7 +419,7 @@ textarea:focus{
 }
 
 .margin-bottom{
-  margin-bottom: 100px;
+  margin-top: -200px;
 }
 
 .span6{
@@ -448,7 +442,7 @@ ul {
     margin: 0;
     padding: 0;
     width: 165px;
-    background-color: #f1f1f1;
+    background-color: #1b1b1b;
 }
 
 @media (max-width: 768px){
@@ -459,14 +453,14 @@ ul {
 
 li a {
     display: block;
-    color: #000;
+    color: white;
     padding: 8px 16px;
     text-decoration: none;
 }
 
 /* Change the link color on hover */
 li a:hover {
-    background-color: #555;
+
     color: white;
 }
 
@@ -501,7 +495,9 @@ element {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
+  background-image: url(../img/buttons/background.png), url(../img/buttons/background.png);
+  background-position: left, right;
+  background-repeat: no-repeat, no-repeat;
 }
 
 /* Modal Content */
@@ -510,16 +506,22 @@ element {
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: visible;
+  height: 90%;
+  background-image: url(../img/buttons/background.png), url(../img/buttons/background.png);
+  background-position: left, right;
+  background-repeat: no-repeat, no-repeat;
+
 }
 
 /* The Close Button */
 .close {
   color: black !important;
-  position: absolute;
   font-size: 3  0px !important;
-  margin-top: -3px;
+  margin-top: 20%;
+  margin-right: 180px;
 
 }
 
@@ -544,7 +546,6 @@ element {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  margin-top: 10px;
   -webkit-user-select: none;
 }
 
@@ -552,6 +553,8 @@ element {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+  margin-right: 180px;
+  margin-left: 10px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -567,7 +570,7 @@ element {
   color: #f2f2f2;
   font-size: 12px;
   position: absolute;
-  top: 50px;
+  top: 15%;
   left: 35px;
 }
 
@@ -576,7 +579,30 @@ element {
   background-color: white;
   padding: 2px 16px;
   color: black;
+  background: url(../img/buttons/background.png) white right no-repeat;
 }
+
+.caption-container-top{
+  text-align: center;
+  background-color: white;
+  padding: 2px 16px;
+  color: black;
+  background-image: url(../img/buttons/background.png), url(../img/buttons/background.png);
+  background-position: left, right;
+  background-repeat: no-repeat, no-repeat;}
+
+.mySlidesInner img {
+  width: auto;
+  height: auto;
+  max-width: 50%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  float: right;
+  margin-top: 2%;
+}
+
+
 
 img.demo {
   opacity: 0.6;
@@ -597,6 +623,26 @@ img.hover-shadow {
 
 .left{
   float: left;
+  text-align: left;
+  padding-top:7%;
+  padding-left: 300px;
+}
+
+.left h1{
+  font-size: 40pt;
+  font-weight: normal;
+  color: #665761;
+}
+
+.category{
+  color: #665761;
+  font-size:14pt;
+}
+
+.description{
+  font-size:14pt;
+  color: #665761;
+  line-height: 170%;
 }
 
 .caption-container .left{
@@ -605,7 +651,58 @@ img.hover-shadow {
 
 .right{
   float: right;
+  display: inline-block;
 }
+
+.caption-container .right a{
+  right: 10px;
+}
+
+.right a{
+  padding: 0 10px;
+}
+
+.top{
+  padding-top: 10px;
+}
+
 .mySlidesInner{
   background-color: #fefefe;
+}
+
+.small{
+  height: 100px;
+}
+
+@media (max-width:1300px){
+  .caption-container{
+    background-image: url('');
+  }
+  .modal-content {
+    background-image: url('');
+  }
+  .caption-container-top {
+    background-image: url('');
+  }
+  .modal{
+    background-image: url('');
+  }
+  .left{
+    padding-left: 50px;
+    padding-top: 10px;
+  }
+  .close{
+    margin-right: 10px;
+  }
+  .next{
+    margin-right: 10px;
+  }
+  .mySlidesInner img{
+    float: none;
+    max-width: 100%;
+    width: 100%;
+  }
+  .hidden-xs{
+    display: none;
+  }
 }

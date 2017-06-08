@@ -25,8 +25,8 @@
   <div id="head">
     <div class="container">
       <div class="row-fluid centered">
-        <div class="col-md-12 logo">
-          <img src="assets/img/logo.svg"/>
+        <div class="col-md-12">
+          <img class="logo" src="assets/img/logo.gif" alt="Aspecte Studio">
         </div>
               <div class="col-md-12 centered">
                 <p class="slogan w3-animate-fading">Design creates culture. Culture shapes values. Values determine the future.</p>
@@ -37,54 +37,7 @@
     </div>
 
   </div>
-  <div id="servicii">
-    <div class="container" id="servicii1">
-      <div class="row-fluid">
-        <div class="col-md-12 title centered">
-          <h3>WHAT WE OFFER</h3>
-        </div>
-      </div>
-    </div>
 
-    <div class="servb">
-     <div class="container">
-      <div class="row-fluid serv1 ">
-        <div class="span3">
-          <h4>BRAND</h4>
-          <P>Visual Identity</P>
-          <p>Logo / Type</p>
-          <p>Key Visual</p>
-          <p>Social Media</p>
-          <p>Stationary</p>
-        </div>
-        <div class="span3">
-          <h4>GRAPHIC</h4>
-          <P>Lettering</P>
-          <p>Characters</p>
-          <p>Environments</p>
-          <p>Patterns</p>
-          <p>Retouching</p>
-        </div>
-        <div class="span3">
-          <h4>UI / WEB</h4>
-          <P>Web design</P>
-          <p>App design</p>
-          <p>Game design</p>
-          <p>GUI</p>
-          <p>Icons</p>
-        </div>
-        <div class="span3">
-          <h4>PRINT</h4>
-          <P>Stationary</P>
-          <p>Packaging</p>
-          <p>Business Cards</p>
-          <p>Brochures</p>
-          <p>Flyers</p>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
     <div id="portofolio">
     <div class="jumbotron">
         <div class="row">
@@ -103,16 +56,16 @@
 
           <div class="col-lg-10" id="wide">
                 <div class="mySlides w3-animate-fading">
-                  <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/Coolt Urban.jpg" title="coolt urban"><div class="span3 boxed centered p1  " rel="group1" href="assets/img/img1/Coolt Urban.jpg">
+                  <a onclick="openModal();currentSlide(1)" title="coolt urban"><div class="span3 boxed centered p1  " rel="group1" href="assets/img/img1/Coolt Urban.jpg">
                   </div></a>
 
-                  <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/High Class Trading.jpg" title="high-class-trading"><div class="span3 boxed centered p2 " rel="group1" href="assets/img/img1/High Class Trading.jpg">
+                  <a onclick="openModal();currentSlide(2)" title="high-class-trading"><div class="span3 boxed centered p2 " rel="group1" href="assets/img/img1/High Class Trading.jpg">
                   </div></a>
 
-                  <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/Joase.jpg" title="Joase"><div class="span3 boxed centered p3">
+                  <a onclick="openModal();currentSlide(3)" title="Joase"><div class="span3 boxed centered p3">
                   </div></a>
 
-                  <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/ride2work.jpg" title="ride2work"><div class="span3 boxed centered p4">
+                  <a onclick="openModal();currentSlide(4)" title="ride2work"><div class="span3 boxed centered p4">
                   </div></a>
 
                   <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/Vatra.jpg" title="Vatra"><div class="span3 boxed centered p5">
@@ -138,6 +91,61 @@
 
                   <a class="fancybox-thumb" rel="gallery1" href="assets/img/img1/soundshare.jpg" title="soundshare"><div class="span3 boxed centered p4">
                   </div></a>
+
+                  <div id="myModal" class="modal w3-animate-right">
+
+
+
+                    <div class="modal-content">
+
+                      <div class="caption-container-top small">
+                        <div class="right">
+                          <a class="close cursor" onclick="closeModal()"><img src="assets/img/buttons/close.png" alt=""></a>
+
+
+                        </div>
+                        <div class="left">
+                            <h1 id="caption">Banana</h1>
+                            <br>
+                            <p class="category">Branding / 2017</p>
+                            <br class="hidden-xs"><br class="hidden-xs"><br><hr><br class="hidden-xs"><br class="hidden-xs"><br>
+                            <p class="description">Stefan Augustin Doinas Street,<br>
+                                                    Cluj-Napoca, Transylvania, Romania<br>
+                                                    Open Monday to Friday, 10:00 - 17:00<br>
+                                                    contact@aspectestudio.ro</p>
+                        </div>
+                      </div>
+
+                      <div class="mySlidesInner w3-animate-fading">
+                        <div class="numbertext">1 / 4</div>
+                          <img src="assets/img/img1/Coolt Urban.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlidesInner w3-animate-fading">
+                        <div class="numbertext">2 / 4</div>
+                          <img src="assets/img/img1/High Class Trading.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlidesInner w3-animate-fading">
+                        <div class="numbertext">3 / 4</div>
+                          <img src="assets/img/img1/Joase.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlidesInner w3-animate-fading">
+                        <div class="numbertext">4 / 4</div>
+                          <img src="assets/img/img1/ride2work.jpg" style="width:100%">
+                      </div>
+
+
+
+                    </div>
+
+                    <div class="caption-container right top">
+                      <a class="prev" onclick="plusSlides(-1)"><img src="assets/img/buttons/arrow-left.png" alt=""></a>
+                      <a class="next" onclick="plusSlides(1)"><img src="assets/img/buttons/arrow-right.png" alt=""></a>
+                    </div>
+
+                  </div>
 
                 </div>
 
@@ -375,4 +383,68 @@ $('.result').html('');
 		    });
 })
     </script>
+
+    <script>
+    function openModal() {
+      document.getElementById('myModal').style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlidesInner");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+    <script type="text/javascript">
+    jQuery(function($){
+    	$(document).keydown(function(e){
+    		switch(e.keyCode){
+    			case 37: {//left arrow
+    				$('.prev').trigger('click');
+    				break;
+    			}
+    			case 39: {//right arrow
+    				$('.next').trigger('click');
+    				break;
+    			}
+          case 27: {//right arrow
+    				$('.close').trigger('click');
+    				break;
+    			}
+    		}
+    		if(Math.abs(e.keyCode - 38) === 1){
+    			e.preventDefault();
+    		}
+    	});
+    });
+    </script>
+
 </html>
