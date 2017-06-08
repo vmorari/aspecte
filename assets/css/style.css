@@ -1,7 +1,9 @@
 #head {
   background-color: white;
+  height: 100vh;
+}
+#head{
   height: auto;
-
 }
 html  {
   background-color: white !important;
@@ -62,7 +64,6 @@ html  {
 .title ul > li{
     margin-left: -12px;
     font-size: 17px;
-
 }
 
 .title ul > li:hover{
@@ -321,7 +322,9 @@ textarea:focus{
   .servb{background:none;}
   .serv1, .serv1 p,#servicii p,#servicii h4 {text-align:center;padding-left:0px;}
   .pins img{display:none;}
-  #portofolio .title{  text-align:center;}
+  #portofolio .title{
+    text-align:center;
+  }
   .righted {
     text-align:center;
     margin-right: -100px;
@@ -368,6 +371,7 @@ textarea:focus{
   width:200px;
   margin-left: 260px;
   text-align: left;
+  height: 300px;
 }
 
 @media (max-width:760px){
@@ -466,6 +470,7 @@ textarea:focus{
 }
 .span9{
   margin-left: 12% !important;
+  text-align: center;
 }
 
 @media(max-width:770px){
