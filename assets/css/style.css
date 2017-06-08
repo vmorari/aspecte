@@ -138,21 +138,14 @@ html, body  {
 .boxed{
   border: 1px solid #806560;
   padding: 0 0;
-  height: 250px;
-  width: 25%;
+  height: 27vh;
   margin-bottom: 0px;
   margin-left: 0px;
   transition: all 0.3s ease 0s;
 }
 
 @media (max-width: 600px){
-  .mySlides{
-    display: inline;
-  }
-  .mySlides a{
-    display: flex;
-    width: 200px;
-  }
+
 }
 
 .p1 {
@@ -194,6 +187,7 @@ html, body  {
 }
 .p10 {
   background: url('../img/p10.png') center center no-repeat;
+  background-size: 250px 250px;
 
 }
 .p11 {
@@ -204,6 +198,47 @@ html, body  {
   background: url('../img/p12.svg') center center no-repeat;
   background-size: 250px 250px;
 }
+
+@media (max-width: 600px){
+  .p1 {
+    background-size: 150px 150px;
+  }
+
+  .p2 {
+    background-size: 150px 150px;
+  }
+  .p3 {
+    background-size: 150px 150px;
+  }
+  .p4 {
+    background-size: 150px 150px;
+  }
+  .p5 {
+    background-size: 150px 150px;
+  }
+  .p6 {
+    background-size: 150px 150px;
+  }
+  .p7 {
+    background-size: 150px 150px;
+  }
+  .p8 {
+    background-size: 150px 150px;
+  }
+  .p9 {
+    background-size: 150px 150px;
+  }
+  .p10 {
+    background-size: 150px 150px;
+  }
+  .p11 {
+    background-size: 150px 150px;
+  }
+  .p12 {
+    background-size: 150px 150px;
+  }
+}
+
 div.boxed:hover {
   cursor: pointer;
   -webkit-transition: background-color 1s ease-out;
@@ -337,7 +372,7 @@ textarea:focus{
   .clam2 {text-align:center;}
 #servicii{margin:100px auto;}
 .serv1 { width:100%;}
-.boxed{border:none;}
+
   .servb{background:none;}
   .serv1, .serv1 p,#servicii p,#servicii h4 {text-align:center;padding-left:0px;}
   .pins img{display:none;}
@@ -375,14 +410,9 @@ textarea:focus{
 }
 
 .w3-animate-fading{animation:fading 2s }@keyframes fading{0%{opacity:0}50%{opacity:1}20%{opacity:0}}
-.span3{
-  width:250px !important;
-}
 
 @media (max-width:500px){
-  .span3{
-    width: auto;
-  }
+
 }
 
 #narrow {
@@ -416,7 +446,7 @@ textarea:focus{
 }
 
 
-@media (max-width: 1200px){
+@media (max-width: 1000px){
   .title .pins img{
     display: none;
   }
@@ -434,14 +464,11 @@ textarea:focus{
     width: 100%;
     margin-top: 100px;
   }
-  .mySlides{
-    margin: auto;
-     width: 90%;
-     margin-left: 12.5%;
-  }
-  @media (min-width:780px){
-    #narrow{
-      margin-left: 40vw;
+
+  @media (min-width:600px){
+    .mySlides{
+
+
     }
   }
 
@@ -450,9 +477,7 @@ textarea:focus{
   #narrow{
     text-align: center;
   }
-  .span3{
-    width: 200px !important;
-  }
+
   .clam2{
     display: none;
   }
@@ -461,9 +486,7 @@ textarea:focus{
   }
 }
 @media (max-width:644px){
-  .mySlides{
-    margin-left: 25%;
-  }
+
 }
 
 .margin-top{
@@ -560,9 +583,9 @@ element {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-image: url(../img/buttons/background.png), url(../img/buttons/background.png);
-  background-position: left, right;
-  background-repeat: no-repeat, no-repeat;
+  background: url('../img/buttons/background.png') left no-repeat,
+              url('../img/buttons/background.png') right no-repeat,
+              white;
 }
 
 /* Modal Content */
@@ -774,4 +797,13 @@ img.hover-shadow {
 
 .jumbotron {
   margin: 0 auto;
+}
+
+.row-no-padding {
+  margin-left: 0;
+  margin-right: 0;
+  [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
