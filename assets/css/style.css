@@ -61,8 +61,17 @@ html  {
 }
 .title ul > li{
     margin-left: -12px;
-    font-size: 20px;
+    font-size: 17px;
+
 }
+
+.title ul > li:hover{
+    margin-left: -12px;
+    font-size: 17px;
+    color: #da2128;
+    text-decoration: none;
+}
+
 #servicii h4{
   font-size: 20px;
   color: #806560;
@@ -487,7 +496,8 @@ li a {
 /* Change the link color on hover */
 li a:hover {
 
-    color: white;
+    color: #da2128;
+    text-decoration: none;
 }
 
 element {
