@@ -7,7 +7,7 @@
     height: auto;
   }
 }
-html  {
+html, body  {
   background-color: white !important;
   overflow-x: hidden;
   max-width: 100%;
