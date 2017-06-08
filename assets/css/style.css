@@ -291,6 +291,10 @@ textarea:focus{
     border-radius: 38px;
 
 }
+.butons:hover{
+  color: white;
+  background-color: #da2128;
+}
 .slogan1{
   margin-bottom: -185px;margin-left: -20px;
 }
