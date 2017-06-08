@@ -41,15 +41,12 @@ html, body  {
 .title ul > li{
     margin-left: -12px;
     font-size: 17px;
-    display: block;
-    float: left;
+
 }
-
-@media(max-width: 1200px){
-  .title ul > li{
-    float:left;
+@media (max-width: 1200px){
+  .title a{
+    text-align: center;
   }
-
 }
 
 
@@ -369,7 +366,7 @@ textarea:focus{
 .white{
   background-color: white !important;
   height: 800px;
-  padding-top: 100px; 
+  padding-top: 100px;
   padding-bottom: 200px;
   width: 83%;
 }
