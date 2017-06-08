@@ -2,8 +2,10 @@
   background-color: white;
   height: 100vh;
 }
-#head{
-  height: auto;
+@media (max-width:1200px){
+  #head{
+    height: auto;
+  }
 }
 html  {
   background-color: white !important;
@@ -128,13 +130,6 @@ html  {
   transition: all 0.3s ease 0s;
 }
 
-
-@media (max-width: 1200px){
-  .boxed{
-    width: 33.33%;
-    max-width: 33.33%;
-  }
-}
 
 .p1 {
   background: url('../img/p1.svg') center center no-repeat;
@@ -750,4 +745,8 @@ img.hover-shadow {
   .hidden-xs{
     display: none;
   }
+}
+
+.jumbotron {
+  margin: 0 auto;
 }
