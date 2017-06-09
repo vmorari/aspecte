@@ -20,6 +20,13 @@ html, body  {
   }
 }
 
+@media(max-width:565px){
+  .centered-xs{
+    text-align: center;
+  }
+}
+
+
 .slogan {
   line-height: 80px;
   font-size: 25px;
@@ -45,6 +52,17 @@ html, body  {
   margin: 50px auto;
   letter-spacing: 0.5pt;
 }
+
+#contact .title h3{
+  margin-left: -100px;
+}
+
+@media(min-width:1200px){
+  #contact .title h3{
+    margin-left: 11%;
+  }
+}
+
 .title ul > li{
     margin-left: -12px;
     font-size: 17px;
@@ -114,6 +132,7 @@ html, body  {
 .boxed{
   border: 1px solid #806560;
   padding: 0 0;
+  min-height: 150px;
   height: 27vh;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -277,10 +296,6 @@ font-size: 12px;
   .socials{
     padding-left: 0px;
   }
-  #contact .title h3 {
-
-    padding-left: 0px !important;
-}
 }
 
 ._ta textarea {
@@ -483,9 +498,35 @@ textarea:focus{
   margin-top: 15px;
 }
 
+.margin-top-textarea{
+  margin-top: 10px;
+}
+
 .margin-bottom{
   margin-top:-100px;
 }
+
+@media(min-width:1200px){
+  .margin-left-email{
+    margin-left: 5%;
+  }
+  .to-left-lg{
+    text-align: left;
+  }
+}
+
+
+@media(max-width:767px){
+  .margin-left-email{
+    margin-left: -30px;
+  }
+}
+@media(max-width:567px){
+  .margin-left-email{
+    margin-left: -20px;
+  }
+}
+
 
 .span6{
   width: 45% !important;
@@ -801,4 +842,7 @@ img.hover-shadow {
     list-style-type:none;
   }
 
+}
+.to-left{
+  text-align: left;
 }
