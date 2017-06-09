@@ -873,13 +873,12 @@ img.hover-shadow {
 }
 
 @media(max-width:1200px){
-  .title{
-    display:inline;
-  }
   .inline{
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     justify-content:space-around;
     list-style-type:none;
+    margin-left: 43%;
   }
 
 }
