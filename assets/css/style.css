@@ -763,7 +763,7 @@ img.hover-shadow {
   line-height: 170%;
 }
 
-@media(max-width:767px){
+@media(max-width:1200px){
   .left h1{
     font-size: 20pt;
   }
@@ -811,6 +811,11 @@ img.hover-shadow {
 .mySlidesInner{
   background-color: #fefefe;
 
+}
+@media(max-width:1200px){
+  .mySlidesInner{
+    height: 1px;
+  }
 }
 
 .small{
