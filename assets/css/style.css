@@ -53,11 +53,6 @@ html, body  {
   letter-spacing: 0.5pt;
 }
 
-@media (max-width:1200px){
-  #contact .title h3{
-    margin-left: 100px;
-  }
-}
 
 
 
@@ -377,10 +372,12 @@ textarea:focus{
 }
 
 
+@media(min-width:767px){
+  #contact .title h3{
+    color: #ccbba3;
+    padding-left: 100px;
+  }
 
-#contact .title h3{
-  color: #ccbba3;
-  padding-left: 100px;
 }
 
 .white{
@@ -847,7 +844,4 @@ img.hover-shadow {
 }
 .to-left{
   text-align: left;
-}
-.to-right{
-  float: right;
 }
