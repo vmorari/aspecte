@@ -25,6 +25,12 @@ html, body  {
     text-align: center;
   }
 }
+@media(min-width:565px){
+  .centered-xs{
+    text-align: left;
+  }
+}
+
 
 
 .slogan {
@@ -107,7 +113,7 @@ html, body  {
   background: -ms-linear-gradient(45deg, #2b2e33, #33393f);
   background: -o-linear-gradient(45deg, #2b2e33, #33393f); */
   padding-bottom: 35px;
-
+  padding-top: 200px;
 }
 
 #portofolio h3{
@@ -503,7 +509,7 @@ textarea:focus{
 
 @media(min-width:1200px){
   .margin-left-email{
-    margin-left: 5%;
+    margin-left: 9%;
   }
   .to-left-lg{
     text-align: left;
@@ -750,6 +756,30 @@ img.hover-shadow {
   line-height: 170%;
 }
 
+@media(max-width:767px){
+  .left h1{
+    font-size: 20pt;
+  }
+
+  .category{
+    font-size:10pt;
+  }
+
+  .description{
+    font-size:10pt;
+  }
+
+  .left{
+    float: left;
+    text-align: left;
+    padding-top:3%;
+    padding-left: 10px;
+  }
+  .close{
+    margin-top: 40%;
+  }
+}
+
 .caption-container .left{
   text-align: left;
 }
@@ -815,9 +845,7 @@ img.hover-shadow {
 .jumbotron {
   margin: 0 auto;
 }
-#portofolio .jumbotron{
-  top: 300px;
-}
+
 
 .row-no-padding {
   margin-left: 0;
