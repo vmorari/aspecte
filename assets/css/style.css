@@ -509,7 +509,7 @@ textarea:focus{
 
 @media(min-width:1200px){
   .margin-left-email{
-    margin-left: 9%;
+    margin-left: 6%;
   }
   .to-left-lg{
     text-align: left;
@@ -608,6 +608,13 @@ element {
   background: url('../img/buttons/background.png') left no-repeat,
               url('../img/buttons/background.png') right no-repeat,
               white;
+}
+
+.modal .jumbotron{
+  background: url('../img/buttons/background.png') left no-repeat,
+              url('../img/buttons/background.png') right no-repeat,
+              white;
+  height: 100vh;
 }
 
 /* Modal Content */
@@ -803,7 +810,7 @@ img.hover-shadow {
 
 .mySlidesInner{
   background-color: #fefefe;
-  height: 100px;
+
 }
 
 .small{
