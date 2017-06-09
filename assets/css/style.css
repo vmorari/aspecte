@@ -53,15 +53,13 @@ html, body  {
   letter-spacing: 0.5pt;
 }
 
-#contact .title h3{
-  margin-left: -100px;
-}
-
-@media(min-width:1200px){
+@media (max-width:1200px){
   #contact .title h3{
-    margin-left: 11%;
+    margin-left: 100px;
   }
 }
+
+
 
 .title ul > li{
     margin-left: -12px;
@@ -288,10 +286,10 @@ font-size: 12px;
 
 @media (max-width: 768px){
   .logo_footer{
-    padding-left: 30px;
+    padding-left: 0px;
   }
   .contacts{
-    padding-left: 30px;
+    padding-left: 0px;
   }
   .socials{
     padding-left: 0px;
@@ -514,6 +512,7 @@ textarea:focus{
     text-align: left;
   }
 }
+
 
 
 @media(max-width:767px){
@@ -819,6 +818,9 @@ img.hover-shadow {
 .jumbotron {
   margin: 0 auto;
 }
+#portofolio .jumbotron{
+  top: 300px;
+}
 
 .row-no-padding {
   margin-left: 0;
@@ -845,4 +847,7 @@ img.hover-shadow {
 }
 .to-left{
   text-align: left;
+}
+.to-right{
+  float: right;
 }
