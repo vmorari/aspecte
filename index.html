@@ -68,7 +68,7 @@
         <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
           <div class="mySlides w3-animate-fading col-lg-12">
             <div class="row row-no-padding">
-              <a class="col-lg-3  col-md-3 col-md-offset-0  col-sm-4 col-sm-offset-2   col-xs-5 col-xs-offset-1 " onclick="openModal();currentSlide(1)" title="coolt urban"><div class=" boxed centered p1  " rel="group1" href="assets/img/img1/Coolt Urban.jpg">
+              <a class="col-lg-3  col-md-3 col-md-offset-0  col-sm-4 col-sm-offset-2   col-xs-5 col-xs-offset-1 " onclick="openModal();currentSlide(1);" title="coolt urban"><div class=" boxed centered p1  " rel="group1" href="assets/img/img1/Coolt Urban.jpg">
               </div></a>
 
               <a class="col-lg-3 col-md-3 col-sm-4 col-xs-5" onclick="openModal();currentSlide(2)" title="high-class-trading"><div class=" boxed centered p2 " rel="group1" href="assets/img/img1/High Class Trading.jpg">
@@ -105,7 +105,7 @@
               <a class="col-lg-3  col-md-3 col-md-offset-0  col-sm-4 col-sm-offset-2   col-xs-5 col-xs-offset-1 " onclick="openModal();currentSlide(3)" title="Joase"><div class=" boxed centered p3">
               </div></a>
 
-              <a class="col-lg-3 col-md-3 col-sm-4 col-xs-5" onclick="openModal();currentSlide(4)" title="ride2work"><div class=" boxed centered p4">
+              <a class="col-lg-3 col-md-3 col-sm-4 col-xs-5" onclick="openModal();currentSlide(5)" title="ride2work"><div class=" boxed centered p4">
               </div></a>
             </div>
 
@@ -153,6 +153,11 @@
                     <img src="assets/img/img1/ride2work.jpg" style="width:100%">
                 </div>
 
+                <div class="mySlidesInner w3-animate-fading">
+                  <div class="website-container">
+                    <img src="assets/img/websites/website-reiz.jpg" alt="">
+                  </div>
+                </div>
 
 
               </div>
@@ -209,13 +214,13 @@
           </div>
 
           <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-12 title centered margin-top-textarea">
-            <h3 class="to-left">Let’s get in touch</h3>
+            <h3 class="to-left-sm">Let’s get in touch</h3>
             <form action="" method="post"  class="_ta">
               <textarea id="textarea1" name="mesaj" placeholder="Hello" ></textarea>
-                <div class="col-lg-7 col-lg-offset-0 col-md-6  col-sm-11 col-xs-6 centered-md margin-left-email margin-top-xxs">
+                <div class="col-lg-7 col-lg-offset-0 col-md-6  col-sm-5 col-sm-offset-1 col-xs-6 col-xs-offset-3 centered-md margin-left-email margin-top-xxs">
                   <input type="email" class="email1" id="emailfrom" name="emailfrom" placeholder="Your e-mail adress" required/>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 margin-top-xxs">
+                <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12 margin-top-xxs">
                   <button onClick="return false;" id="idContact" name="send_Contact" class="butons">SEND</button>
                 </div>
             </form>
@@ -378,10 +383,22 @@ $('.result').html('');
     <script>
     function openModal() {
       document.getElementById('myModal').style.display = "block";
+      window.onscroll=function(){window.scrollTo(1200, 1200);};
     }
 
     function closeModal() {
       document.getElementById('myModal').style.display = "none";
+      window.onscroll=function(){};
+    }
+
+    function disableScrolling(){
+    var x=window.scrollX;
+    var y=window.scrollY;
+    window.onscroll=function(){window.scrollTo(x, y);};
+    }
+
+    function enableScrolling(){
+        window.onscroll=function(){};
     }
 
     var slideIndex = 1;

@@ -112,6 +112,19 @@ html, body  {
   padding-top: 200px;
 }
 
+@media(max-width:1155px){
+  #portofolio{
+    padding-top: 100px;
+  }
+}
+
+@media(max-width:555px){
+  #portofolio{
+    padding-top: 50px;
+  }
+}
+
+
 #portofolio h3{
   color: #ccbba3;
   padding-top: 40px;
@@ -442,7 +455,7 @@ textarea:focus{
 @media(min-width:767px){
   #contact .title h3{
     color: #ccbba3;
-    padding-left: 100px;
+    padding-left: 14%;
   }
 
 }
@@ -559,7 +572,7 @@ textarea:focus{
 .margin-top-xxs{
   margin-top: 15px;
 }
-@media(max-width:1198px){
+@media(max-width:700px){
   .margin-top-xxs{
     margin-top: -35px;
   }
@@ -573,7 +586,9 @@ textarea:focus{
   margin-top:-100px;
 }
 
-@media(min-width:1200px){
+
+
+@media(min-width:986px){
   .margin-left-email{
     margin-left: 6%;
   }
@@ -595,7 +610,6 @@ textarea:focus{
 
 @media(max-width:770px){
   .centered input{
-    margin-right: -120%;
     text-align: center;
   }
 }
@@ -663,6 +677,10 @@ element {
   background: url('../img/buttons/background.png') left no-repeat,
               url('../img/buttons/background.png') right no-repeat,
               white;
+}
+
+.modal::-webkit-scrollbar {
+    display: none;
 }
 
 .modal .jumbotron{
@@ -933,11 +951,34 @@ img.hover-shadow {
   }
   .inline{
     display: inline-flex;
-    justify-content:space-between;;
+    justify-content:space-around;
     list-style-type:none;
   }
 
 }
 .to-left{
   text-align: left;
+}
+@media(min-width:767px){
+  .to-left-sm{
+    text-align: left;
+  }
+}
+.website-container{
+  width: 40%;
+  height: 40vw;
+
+  overflow-y: scroll;
+  float: right;
+  margin-top: 10px;
+}
+.website-container img{
+  min-width: 100%;
+  height: auto;
+
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
