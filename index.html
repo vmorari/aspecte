@@ -33,7 +33,7 @@
         </div>
               <div class="col-md-12 centered">
                 <p class="slogan w3-animate-fading">Design creates culture. Culture shapes values. Values determine the future.</p>
-                <a href="#portofolio" ><img class="margin-bottom" src="assets/img/arr.png"/></a>
+                <a href="#portofolio1" ><img class="margin-bottom" src="assets/img/arr.png"/></a>
               </div>
 
 
@@ -175,7 +175,7 @@
             <div class="col-lg-8">
 
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
               <p class="texted righted">Check our <a style="text-decoration:underline" href="https://www.facebook.com/AspecteStudio/?fref=ts">Facebook page</a> for more</p>
             </div>
           </div>
@@ -213,7 +213,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-12 title centered margin-top-textarea">
+          <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-12 title centered margin-top-textarea">
             <h3 class="to-left-sm">Let’s get in touch</h3>
             <form action="" method="post"  class="_ta">
               <textarea id="textarea1" name="mesaj" placeholder="Hello" ></textarea>
@@ -330,55 +330,6 @@ $('.result').html('');
       });
     </script>
 
-    <script>
-    $(function(){
-	    $('.fancybox-thumb').fancybox({
-        nextEffect : 'none',
-        prevEffect : 'none',
-        autoSize : true,
-         autoWidth: true,
-         autoHeight: true,
-         fitToView: true,
-        'titlePosition'  : 'inside',
-		    padding : 0,
-		    arrows: false,
-
-		    helpers : {
-                thumbs : {
-				    width  : 150,
-				    height : 150
-			    },
-          overlay: {
-            opacity: 0.4, // this make the color transparent. set to 1 for solid color
-            css: {
-                'background': '#1b1b1b'
-            }
-          }
-		    },
-		    onUpdate:function(){
-			    $('#fancybox-thumbs ul').draggable({
-				    axis: "x"
-			    });
-			    var posXY = '';
-			    $('.fancybox-skin').draggable({
-				    axis: "x",
-				    drag: function(event,ui){
-					    // get position
-                        posXY = ui.position.left;
-                        // if drag distance bigger than +- 100px: cancel drag function..
-                        if(posXY > 100){return false;}
-					    if(posXY < -100){return false;}
-				    },
-				    stop: function(){
-                        // ... and get next oder previous image
-					    if(posXY > 95){$.fancybox.prev();}
-					    if(posXY < -95){$.fancybox.next();}
-				    }
-			    });
-		    }
-		    });
-})
-    </script>
 
     <script>
     function openModal() {
