@@ -824,6 +824,21 @@ img.hover-shadow {
   background-color: #fefefe;
 
 }
+
+@media(max-width:600px){
+  .left h1{
+    font-size: 15pt;
+  }
+
+  .category{
+    font-size:7.5pt !important;
+  }
+
+  .description{
+    font-size:7.5pt !important;
+  }
+}
+
 @media(max-width:1200px){
   .mySlidesInner{
     height: 1px;
