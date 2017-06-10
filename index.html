@@ -335,6 +335,9 @@ $('.result').html('');
     function openModal() {
       document.getElementById('myModal').style.display = "block";
       window.onscroll=function(){window.scrollTo(1200, 1200);};
+      var parent = document.getElementById('container1');
+      var child = document.getElementById('container2');
+      child.style.paddingRight = child.offsetWidth - child.clientWidth + "px";
     }
 
     function closeModal() {

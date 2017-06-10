@@ -383,6 +383,7 @@ textarea:focus{
   margin-bottom: -185px;margin-left: -20px;
 }
 .clam1{margin-bottom:-150px;margin-left: -300px;}
+
 @media (max-width: 767px) {
   .container{width: auto;}
   .logo img {
@@ -397,6 +398,7 @@ textarea:focus{
   .clam2 {text-align:center;}
 #servicii{margin:100px auto;}
 .serv1 { width:100%;}
+
   .servb{background:none;}
   .serv1, .serv1 p,#servicii p,#servicii h4 {text-align:center;padding-left:0px;}
   .pins img{display:none;}
@@ -413,6 +415,8 @@ textarea:focus{
   ._ta textarea {width:100%;}
   .email1{width:95%;margin-left:0px !important;}
 }
+
+
 @media(min-width:767px){
   #contact .title h3{
     color: #ccbba3;
@@ -420,6 +424,7 @@ textarea:focus{
   }
 
 }
+
 .white{
   background-color: white !important;
   height: 800px;
@@ -427,11 +432,13 @@ textarea:focus{
   padding-bottom: 200px;
   width: 83%;
 }
+
 @media(max-width:1200px){
   .white{
     width: 100%;
   }
 }
+
 #contact{
   background-color: #1b1b1b;
 }
@@ -614,7 +621,7 @@ li a:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
   background: url('../img/buttons/background.png') left no-repeat,
               url('../img/buttons/background.png') right no-repeat,
               white;
@@ -636,13 +643,19 @@ li a:hover {
   margin: auto;
   padding: 0;
   width: 100%;
-  overflow-y: auto;
+  overflow-y: hidden;
   overflow-x: hidden;
   height: 90%;
   background-image: url(../img/buttons/background.png), url(../img/buttons/background.png);
   background-position: left, right;
   background-repeat: no-repeat, no-repeat;
 
+}
+
+@media(max-width:1300px){
+  .modal-content{
+    overflow-y: scroll;
+  }
 }
 
 /* The Close Button */
@@ -781,11 +794,11 @@ img.hover-shadow {
   }
 
   .category{
-    font-size:10pt !important;
+    font-size:10pt;
   }
 
   .description{
-    font-size:10pt !important;
+    font-size:10pt;
   }
 
   .left{
@@ -824,24 +837,9 @@ img.hover-shadow {
   background-color: #fefefe;
 
 }
-
-@media(max-width:600px){
-  .left h1{
-    font-size: 15pt;
-  }
-
-  .category{
-    font-size:7.5pt !important;
-  }
-
-  .description{
-    font-size:7.5pt !important;
-  }
-}
-
 @media(max-width:1200px){
   .mySlidesInner{
-    height: 1px;
+    height: 0px;
   }
 }
 
