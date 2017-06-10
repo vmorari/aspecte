@@ -6,29 +6,23 @@
 html, body  {
   background-color: white !important;
   overflow-x: hidden;
+  overflow-y: auto;
     max-width: 100%;
   height: auto;
 }
-
 .centered {
   text-align: center;
 }
-
 @media(max-width:1200px){
   .centered-md{
     text-align: center;
   }
 }
-
 @media(max-width:766px){
   .centered-xs{
     text-align: center;
   }
 }
-
-
-
-
 .slogan {
   line-height: 80px;
   font-size: 25px;
@@ -54,10 +48,6 @@ html, body  {
   margin: 50px auto;
   letter-spacing: 0.5pt;
 }
-
-
-
-
 .title ul > li{
     margin-left: -12px;
     font-size: 17px;
@@ -68,16 +58,12 @@ html, body  {
     text-align: center;
   }
 }
-
-
-
 .title ul > li:hover{
     margin-left: -12px;
     font-size: 17px;
     color: #da2128;
     text-decoration: none;
 }
-
 #servicii h4{
   font-size: 20px;
   color: #806560;
@@ -111,20 +97,16 @@ html, body  {
   padding-bottom: 35px;
   padding-top: 200px;
 }
-
 @media(max-width:1155px){
   #portofolio{
     padding-top: 100px;
   }
 }
-
 @media(max-width:555px){
   #portofolio{
     padding-top: 50px;
   }
 }
-
-
 #portofolio h3{
   color: #ccbba3;
   padding-top: 40px;
@@ -135,8 +117,6 @@ html, body  {
   color: #806560;
   font-size: 12px;
 }
-/* .container{width: 970px;} */
-
 .boxed{
   border: 1px solid #806560;
   padding: 0 0;
@@ -148,38 +128,30 @@ html, body  {
   margin-left: 0px;
   transition: all 0.3s ease 0s;
 }
-
 @media (max-width: 1197px){
   .boxed{
     height: 25vw;
   }
 }
-
 @media (max-width: 990px){
   .boxed{
     height: 30vw;
   }
 }
-
 @media (max-width: 754px){
   .boxed{
     height: 40vw;
   }
 }
-
 @media (max-width: 459px){
   .boxed{
     height: 25vw;
   }
 }
-
-
-
 .p1 {
   background: url('../img/p1.svg') center center no-repeat;
   background-size: 250px 250px;
 }
-
 .p2 {
   background: url('../img/p2.svg') center center no-repeat;
   background-size: 250px 250px;
@@ -225,7 +197,6 @@ html, body  {
   background: url('../img/p12.svg') center center no-repeat;
   background-size: 250px 250px;
 }
-
 @media (max-width: 1484px){
   .p1 {
     background-size: 150px 150px;
@@ -265,7 +236,6 @@ html, body  {
     background-size: 150px 150px;
   }
 }
-
 @media (max-width: 600px){
   .p1 {
     background-size: 150px 150px;
@@ -305,7 +275,6 @@ html, body  {
     background-size: 150px 150px;
   }
 }
-
 div.boxed:hover {
   cursor: pointer;
   -webkit-transition: background-color 1s ease-out;
@@ -334,8 +303,6 @@ div.boxed:hover {
   padding: 100px auto;
 
 }
-
-
 .logo_footer{
   padding: 50px 0px 70px;
   padding-left: 95px;
@@ -357,7 +324,6 @@ font-size: 12px;
     padding-top:0px;
     padding-left: 0px;
 }
-
 @media (max-width: 768px){
   .logo_footer{
     padding-left: 0px;
@@ -369,7 +335,6 @@ font-size: 12px;
     padding-left: 0px;
   }
 }
-
 ._ta textarea {
     background: transparent url(../img/line1.png) repeat;
     border:none;
@@ -418,7 +383,6 @@ textarea:focus{
   margin-bottom: -185px;margin-left: -20px;
 }
 .clam1{margin-bottom:-150px;margin-left: -300px;}
-
 @media (max-width: 767px) {
   .container{width: auto;}
   .logo img {
@@ -433,7 +397,6 @@ textarea:focus{
   .clam2 {text-align:center;}
 #servicii{margin:100px auto;}
 .serv1 { width:100%;}
-
   .servb{background:none;}
   .serv1, .serv1 p,#servicii p,#servicii h4 {text-align:center;padding-left:0px;}
   .pins img{display:none;}
@@ -450,8 +413,6 @@ textarea:focus{
   ._ta textarea {width:100%;}
   .email1{width:95%;margin-left:0px !important;}
 }
-
-
 @media(min-width:767px){
   #contact .title h3{
     color: #ccbba3;
@@ -459,7 +420,6 @@ textarea:focus{
   }
 
 }
-
 .white{
   background-color: white !important;
   height: 800px;
@@ -467,13 +427,11 @@ textarea:focus{
   padding-bottom: 200px;
   width: 83%;
 }
-
 @media(max-width:1200px){
   .white{
     width: 100%;
   }
 }
-
 #contact{
   background-color: #1b1b1b;
 }
@@ -596,18 +554,6 @@ textarea:focus{
     text-align: left;
   }
 }
-
-
-
-
-.span6{
-  width: 45% !important;
-}
-.span9{
-  margin-left: 12% !important;
-  text-align: center;
-}
-
 @media(max-width:770px){
   .centered input{
     text-align: center;
@@ -643,11 +589,6 @@ li a:hover {
     text-decoration: none;
 }
 
-element {
-    width: 150px;
-    height: 150px !important;
-}
-
 .row > .column {
   padding: 0 8px;
 }
@@ -679,9 +620,7 @@ element {
               white;
 }
 
-.modal::-webkit-scrollbar {
-    display: none;
-}
+
 
 .modal .jumbotron{
   background: url('../img/buttons/background.png') left no-repeat,
@@ -697,8 +636,8 @@ element {
   margin: auto;
   padding: 0;
   width: 100%;
-  overflow-y: hidden;
-  overflow-x: visible;
+  overflow-y: auto;
+  overflow-x: hidden;
   height: 90%;
   background-image: url(../img/buttons/background.png), url(../img/buttons/background.png);
   background-position: left, right;
