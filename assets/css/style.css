@@ -920,6 +920,16 @@ img.hover-shadow {
     justify-content:space-around;
     list-style-type:none;
   }
+}
+@media(max-width:500px){
+  .title{
+    display:block;
+  }
+  .inline{
+    display:list-item;;
+    justify-content:space-around;
+    list-style-type:none;
+  }
 
 }
 .to-left{
