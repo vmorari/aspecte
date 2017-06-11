@@ -794,11 +794,11 @@ img.hover-shadow {
   }
 
   .category{
-    font-size:10pt;
+    font-size: 10pt !important;
   }
 
   .description{
-    font-size:10pt;
+    font-size:10pt !important;
   }
 
   .left{
@@ -809,6 +809,20 @@ img.hover-shadow {
   }
   .close{
     margin-top: 40%;
+  }
+}
+
+@media(max-width:600px){
+  .left h1{
+    font-size: 15pt;
+  }
+
+  .category{
+    font-size: 7.5pt !important;
+  }
+
+  .description{
+    font-size:7.5pt !important;
   }
 }
 
