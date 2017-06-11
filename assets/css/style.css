@@ -126,7 +126,7 @@ html, body  {
   min-width: 150px;
   margin-bottom: 0px;
   margin-left: 0px;
-  transition: all 0.3s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 @media (max-width: 1197px){
   .boxed{
@@ -767,7 +767,7 @@ img.hover-shadow {
 .left{
   float: left;
   text-align: left;
-  padding-top:7%;
+  padding-top: 5%;
   padding-left: 300px;
 }
 
@@ -861,7 +861,7 @@ img.hover-shadow {
   height: 100px;
 }
 
-@media (max-width:1300px){
+@media (max-width:1350px){
   .caption-container{
     background-image: url('');
   }
