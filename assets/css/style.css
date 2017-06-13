@@ -9,6 +9,7 @@ html, body  {
   overflow-y: auto;
     max-width: 100%;
   height: auto;
+  margin: 0px;
 }
 .centered {
   text-align: center;
@@ -354,7 +355,6 @@ textarea:focus{
   overflow:hidden;
   line-height:30px !important;
   color:#333940 !important;
-  padding:10px !important;
   box-shadow: none !important;
   margin-left: 30px !important;
   margin-top: 50px;
@@ -622,17 +622,13 @@ li a:hover {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: url('../img/buttons/background.png') left no-repeat,
-              url('../img/buttons/background.png') right no-repeat,
-              white;
+  background-color: white;
 }
 
 
 
 .modal .jumbotron{
-  background: url('../img/buttons/background.png') left no-repeat,
-              url('../img/buttons/background.png') right no-repeat,
-              white;
+
   height: 100vh;
 }
 
@@ -643,13 +639,13 @@ li a:hover {
   margin: auto;
   padding: 0;
   width: 100%;
-  overflow-y: hidden;
+  overflow-y: scroll;
   overflow-x: hidden;
-  height: 90%;
-  background-image: url(../img/buttons/background.png), url(../img/buttons/background.png);
-  background-position: left, right;
-  background-repeat: no-repeat, no-repeat;
-
+  height: 100%;
+  background:
+   url(../img/buttons/background.png) right top no-repeat,  /* On top,    like z-index: 4; */
+   url(../img/buttons/background-horizontal.png) bottom left no-repeat,
+   url(../img/buttons/background-horizontal.png) bottom right no-repeat;
 }
 
 @media(max-width:1300px){
@@ -662,8 +658,6 @@ li a:hover {
 .close {
   color: black !important;
   font-size: 3  0px !important;
-  margin-top: 20%;
-  margin-right: 180px;
 
 }
 
@@ -683,7 +677,7 @@ li a:hover {
 .prev,
 .next {
   cursor: pointer;
-  position: relative;;
+  position: relative;
   color: black;
   font-size: 20px;
   transition: 0.6s ease;
@@ -696,8 +690,8 @@ li a:hover {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-  margin-right: 180px;
   margin-left: 10px;
+  margin-right: 100px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -722,27 +716,32 @@ li a:hover {
   background-color: white;
   padding: 2px 16px;
   color: black;
-  background: url(../img/buttons/background.png) white right no-repeat;
 }
 
 .caption-container-top{
   text-align: center;
   background-color: white;
-  padding: 2px 16px;
+
   color: black;
-  background-image: url(../img/buttons/background.png), url(../img/buttons/background.png);
-  background-position: left, right;
-  background-repeat: no-repeat, no-repeat;}
+  background:
+   url(../img/buttons/background.png) right top no-repeat;
+  background-size: 144px;
+}
+
 
 .mySlidesInner img {
+  display: block;
   width: auto;
   height: auto;
-  max-width: 50%;
+  max-width: 55%;
+  max-height: 86%;
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic;
   float: right;
-  margin-top: 2%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 
@@ -767,8 +766,8 @@ img.hover-shadow {
 .left{
   float: left;
   text-align: left;
-  padding-top: 5%;
-  padding-left: 300px;
+  padding-top: 15%;
+
 }
 
 .left h1{
@@ -788,43 +787,6 @@ img.hover-shadow {
   line-height: 170%;
 }
 
-@media(max-width:1200px){
-  .left h1{
-    font-size: 20pt;
-  }
-
-  .category{
-    font-size: 10pt !important;
-  }
-
-  .description{
-    font-size:10pt !important;
-  }
-
-  .left{
-    float: left;
-    text-align: left;
-    padding-top:3%;
-    padding-left: 10px;
-  }
-  .close{
-    margin-top: 40%;
-  }
-}
-
-@media(max-width:600px){
-  .left h1{
-    font-size: 15pt;
-  }
-
-  .category{
-    font-size: 7.5pt !important;
-  }
-
-  .description{
-    font-size:7.5pt !important;
-  }
-}
 
 .caption-container .left{
   text-align: left;
@@ -833,6 +795,8 @@ img.hover-shadow {
 .right{
   float: right;
   display: inline-block;
+  margin-top: 3%;
+  margin-right: 2.5%;
 }
 
 .caption-container .right a{
@@ -859,39 +823,6 @@ img.hover-shadow {
 
 .small{
   height: 100px;
-}
-
-@media (max-width:1350px){
-  .caption-container{
-    background-image: url('');
-  }
-  .modal-content {
-    background-image: url('');
-  }
-  .caption-container-top {
-    background-image: url('');
-  }
-  .modal{
-    background-image: url('');
-  }
-  .left{
-    padding-left: 10px;
-    padding-top: 10px;
-  }
-  .close{
-    margin-right: 10px;
-  }
-  .next{
-    margin-right: 10px;
-  }
-  .mySlidesInner img{
-    float: none;
-    max-width: 100%;
-    width: 100%;
-  }
-  .hidden-xs{
-    display: none;
-  }
 }
 
 .jumbotron {
@@ -956,7 +887,76 @@ img.hover-shadow {
 
 }
 
-.stop-scrolling {
-  height: 100%;
-  overflow: hidden;
+@media(max-height:623px){
+  .modal-content{
+    background-image: url();
+  }
+  .caption-container-top{
+    background-image: url();
+  }
+}
+@media(max-width:1142px){
+  .modal-content{
+    background-image: url();
+  }
+  .caption-container-top{
+    background-image: url();
+  }
+  .left h1{
+    font-size: 25pt;
+  }
+  .description{
+    font-size: 12pt !important;
+  }
+  .left{
+    margin-top: 15%;
+  }
+  .mySlidesInner img{
+  }
+}
+@media(max-width:385px){
+  .mySlidesInner img{
+
+    max-width: 100%;
+  }
+}
+@media(max-height:385px){
+  .left{
+    margin-top: 5%;
+  }
+}
+@media(max-width:1200px){
+  .left h1{
+    font-size: 20pt;
+  }
+
+  .category{
+    font-size: 10pt !important;
+  }
+
+  .description{
+    font-size:10pt !important;
+  }
+
+  .left{
+    float: left;
+    text-align: left;
+    padding-top:3%;
+    padding-left: 10px;
+  }
+
+}
+
+@media(max-width:600px){
+  .left h1{
+    font-size: 15pt;
+  }
+
+  .category{
+    font-size: 7.5pt !important;
+  }
+
+  .description{
+    font-size:7.5pt !important;
+  }
 }
