@@ -53,9 +53,9 @@
               <h3>Portofolio</h3>
               <br class="hidden-xs"><br class="hidden-xs">
               <ul class="inline">
-                <li><a href="#/" onclick="currentDiv(1)">Branding</a></li>
-                <li><a href="#/" onclick="currentDiv(2)">Illustrations</a></li>
-                <li><a href="#/" onclick="currentDiv(3)">Web-Design</a></li>
+                <li><a href="#/" onclick="currentDivCategory(1)">Branding</a></li>
+                <li><a href="#/" onclick="currentDivCategory(2)">Illustrations</a></li>
+                <li><a href="#/" onclick="currentDivCategory(3)">Web-Design</a></li>
               </ul>
 
           </div>
@@ -100,10 +100,10 @@
                 <a class="col-lg-3  col-md-3 col-md-offset-0  col-sm-4 col-sm-offset-2   col-xs-5 col-xs-offset-1 " onclick="openModal();currentSlide(1)" title="coolt urban"><div class="boxed centered p9">
                 </div></a>
 
-                <a class="col-lg-3 col-md-3 col-sm-4 col-xs-5" onclick="openModal();currentSlide(2)" title="high-class-trading"><div class="boxed centered p12">
+                <a class="col-lg-3 col-md-3 col-sm-4 col-xs-5" onclick="openModal();currentSlide(2)" title="high-class-trading"><div class="boxed centered p10">
                 </div></a>
 
-                <a class="col-lg-3  col-md-3 col-md-offset-0  col-sm-4 col-sm-offset-2   col-xs-5 col-xs-offset-1 " onclick="openModal();currentSlide(3)" title="Joase"><div class=" boxed centered p3">
+                <a class="col-lg-3  col-md-3 col-md-offset-0  col-sm-4 col-sm-offset-2   col-xs-5 col-xs-offset-1 " onclick="openModal();currentSlide(3)" title="Joase"><div class=" boxed centered p11">
                 </div></a>
 
                 <a class="col-lg-3 col-md-3 col-sm-4 col-xs-5" onclick="plusDivs(1)" title="ride2work"><div class=" boxed centered"><h1 class="boxed-buttons">See More</h1>
@@ -144,16 +144,16 @@
                 <a class="col-lg-3  col-md-3 col-md-offset-0  col-sm-4 col-sm-offset-2   col-xs-5 col-xs-offset-1 " onclick="openModal();currentSlide(1)" title="coolt urban"><div class="boxed centered p9">
                 </div></a>
 
-                <a class="col-lg-3 col-md-3 col-sm-4 col-xs-5" onclick="openModal();currentSlide(2)" title="high-class-trading"><div class="boxed centered p12">
+                <a class="col-lg-3 col-md-3 col-sm-4 col-xs-5" onclick="openModal();currentSlide(2)" title="high-class-trading"><div class="boxed centered p10">
                 </div></a>
 
-                <a class="col-lg-3  col-md-3 col-md-offset-0  col-sm-4 col-sm-offset-2   col-xs-5 col-xs-offset-1 " onclick="openModal();currentSlide(3)" title="Joase"><div class=" boxed centered p3">
+                <a class="col-lg-3  col-md-3 col-md-offset-0  col-sm-4 col-sm-offset-2   col-xs-5 col-xs-offset-1 " onclick="openModal();currentSlide(3)" title="Joase"><div class=" boxed centered p11">
                 </div></a>
 
-                <a class="col-lg-3 col-md-3 col-sm-4 col-xs-5" onclick="openModal();currentSlide(2)" title="high-class-trading"><div class=" boxed centered p2 " rel="group1" href="assets/img/img1/High Class Trading.jpg">
+                <a class="col-lg-3 col-md-3 col-sm-4 col-xs-5" onclick="plusDivs(1)" title="ride2work"><div class=" boxed centered p12">
                 </div></a>
-
               </div>
+            </div>
             </div>
 
             <div id="myModal" class="jumbotron modal w3-animate-right">
@@ -307,17 +307,17 @@
     <!--content fade-in -->
     <script>
       var slideIndex = 1;
-      showDivs(slideIndex);
+      showDivsCategory(slideIndex);
 
-      function plusDivs(n) {
-        showDivs(slideIndex += n);
+      function plusDivsCategory(n) {
+        showDivsCategory(slideIndex += n);
       }
 
-      function currentDiv(n) {
-        showDivs(slideIndex = n);
+      function currentDivCategory(n) {
+        showDivsCategory(slideIndex = n);
       }
 
-      function showDivs(n) {
+      function showDivsCategory(n) {
         var i;
         var x = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("demo");
@@ -387,16 +387,6 @@ $('.result').html('');
     function closeModal() {
       document.getElementById('myModal').style.display = "none";
       window.onscroll=function(){};
-    }
-
-    function disableScrolling(){
-    var x=window.scrollX;
-    var y=window.scrollY;
-    window.onscroll=function(){window.scrollTo(x, y);};
-    }
-
-    function enableScrolling(){
-        window.onscroll=function(){};
     }
 
     var slideIndex = 1;

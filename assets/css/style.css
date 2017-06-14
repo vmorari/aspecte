@@ -354,7 +354,6 @@ textarea:focus{
   overflow:hidden;
   line-height:30px !important;
   color:#333940 !important;
-  padding:10px !important;
   box-shadow: none !important;
   margin-left: 30px !important;
   margin-top: 50px;
@@ -545,7 +544,7 @@ textarea:focus{
 }
 @media(max-width:700px){
   .margin-top-xxs{
-    margin-top: -35px;
+    margin-top: 0px;
   }
 }
 
@@ -750,9 +749,6 @@ li a:hover {
   float: right;
   margin-top: 2%;
 }
-
-
-
 img.demo {
   opacity: 0.6;
 }
@@ -970,7 +966,7 @@ img.hover-shadow {
 
 }
 
-.stop-scrolling {
-  height: 100%;
-  overflow: hidden;
+.boxed-buttons{
+  color: white;
+  margin-top: 45%;
 }
