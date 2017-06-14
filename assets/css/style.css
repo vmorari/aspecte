@@ -375,6 +375,12 @@ textarea:focus{
     border-radius: 38px;
 
 }
+@media(max-width: 767px){
+    .margin-bottom-xs{
+      margin-bottom: 100px;
+    }
+  }
+}
 .butons:hover{
   color: white;
   background-color: #da2128;
