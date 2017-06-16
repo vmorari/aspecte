@@ -127,6 +127,7 @@ html, body  {
   margin-bottom: 0px;
   margin-left: 0px;
   transition: all 0.5s ease 0s;
+  overflow: hidden;
 }
 @media (max-width: 1197px){
   .boxed{
@@ -387,8 +388,12 @@ textarea:focus{
 .slogan1{
   margin-bottom: -185px;margin-left: -20px;
 }
-.clam1{margin-bottom:-150px;margin-left: -300px;}
-
+.clam1{margin-bottom:-150px;margin-left: 18%;}
+@media(max-width:1337px){
+  .clam1{
+    margin-left: 5%;
+  }
+}
 @media (max-width: 767px) {
   .container{width: auto;}
   .logo img {
@@ -969,4 +974,8 @@ img.hover-shadow {
 .boxed-buttons{
   color: white;
   margin-top: 45%;
+}
+
+.col-xs-12{
+  z-index: 1;
 }
